@@ -3,9 +3,9 @@
 .width{
     display:flex;
     padding-top: 1cm;
-    background-color: #ff6b00;
     color: white;   
     background-size: 100%;
+    background-image: url(https://i.ytimg.com/vi/oGhDP2O6g1o/maxresdefault.jpg); 
 }
 
 .title{
@@ -15,6 +15,11 @@
     background-color: #015dca;
     color: white;
     height: 2cm;
-    ;
 }
+
+.style{
+    width:600px;
+}
+
+
 
