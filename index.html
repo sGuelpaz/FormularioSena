@@ -13,74 +13,78 @@
 
 
     <div class="container-md">
+        <form action="" id="formulario1" name="formulario" method="get">
 
-        
-        <div class="container style">
-            <h2 class="title"> <img src="ASSHS/Images/logo-sena.png" alt="" width="72"  class="d-inline-block align-text-top float-start"><span class="align-middle">Registro estudiantes SENA</span><img src="ASSHS/Images/logo-sena.png" alt="" width="72"  class="d-inline-block align-text-top float-end"></h2>
-            <br><br>
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
-                <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-default">
-            </div>
-    
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="inputGroup-sizing-default">Apellido</span>
-                <input type="text" class="form-control" aria-label="Sizing example input"
-                    aria-describedby="inputGroup-sizing-default">
-            </div>
-    
-            <!--CHECKBOX-->
-    
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"><b>Documento Identidad</b></label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="tarjetaidentidad" id="flexRadioDefault1" >
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        T.I
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="cedula" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        C.C
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="pasaporte" id="flexRadioDefault3">
-                    <label class="form-check-label" for="flexRadioDefault3">
-                        Pasaporte
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="pep" id="flexRadioDefault4">
-                    <label class="form-check-label" for="flexRadioDefault4">
-                        PEP
-                    </label>
-                </div>
-    
+            <div class="container style">
+                <h2 class="title"> <img src="ASSHS/Images/logo-sena.png" alt="" width="72"  class="d-inline-block align-text-top float-start"><span class="align-middle">Registro estudiantes SENA</span><img src="ASSHS/Images/logo-sena.png" alt="" width="72"  class="d-inline-block align-text-top float-end"></h2>
+                <br>
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Número documento</span>
-                    <input type="text" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                    <input id="nombre" type="text" name="nombre" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default"  required>
                 </div>
-            </div>
-    
-            <!--FIN CHECKOX-->
-    
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label"><b>Email</b></label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-    
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"><b>Observaciones</b></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-    
-            <button type="button" class="btn btn-primary btn-lg">Enviar</button>
-        </div>
         
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Apellido</span>
+                    <input id="apellido" type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default" name="apellido" required>
+                </div>
+        
+                <!--CHECKBOX-->
+        
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Documento Identidad</b></label>
+    
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="C.C" name="documento" id="c_c" required>
+                        <label class="form-check-label" for="c_c">
+                          C.C
+                        </label>
+                      </div>
+    
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="T.I" name="documento" id="t_i" required checked>
+                        <label class="form-check-label" for="t_i">
+                          T.I
+                        </label>
+                      </div>
+    
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="Pasaporte" name="documento" id="Pasaporte" required>
+                        <label class="form-check-label" for="Pasaporte">
+                          Pasaporte
+                        </label>
+                      </div>
+    
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="PEP" name="documento" id="PEP" required>
+                        <label class="form-check-label" for="PEP">
+                          PEP
+                        </label>
+                      </div>
+        
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Número documento</span>
+                        <input id="num_doc" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-default" name="num_doc"required>
+                    </div>
+                </div>
+        
+                <!--FIN CHECKOX-->
+        
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"><b>Email</b></label>
+                    <input id="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"><b>Observaciones</b></label>
+                    <textarea class="form-control" id="observacion" rows="3" name="observacion"></textarea>
+                </div>
+        
+                <button type="button" id="btn" onclick="getData()"class="btn btn-primary btn-lg">Enviar</button>
+        </form>
+        </div>
     </div>
 
 

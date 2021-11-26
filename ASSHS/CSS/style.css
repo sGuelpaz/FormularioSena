@@ -3,22 +3,31 @@
 .width{
     display:flex;
     padding-top: 1cm;
-    color: white;   
-    background-size: 100%;
-    background-image: url(https://i.ytimg.com/vi/oGhDP2O6g1o/maxresdefault.jpg); 
+    min-height: 100vh;
+    background: url(https://i.ytimg.com/vi/oGhDP2O6g1o/maxresdefault.jpg) no-repeat center center fixed;
+    background-size: cover; 
+
 }
 
 .title{
-    border: 2px double white;
+    border: 2px outset white;
     border-radius: 3px;
     text-align: center;
     background-color: #015dca;
     color: white;
     height: 2cm;
+    margin-left: -0.3cm;
+    margin-right: -0.3cm;
 }
 
 .style{
     width:600px;
+    padding-bottom: 0.5cm;
+}
+
+.container{
+    background-color: white;
+    border: 5px outset #015dca;
 }
 
 
